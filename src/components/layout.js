@@ -38,9 +38,9 @@ const Layout = ({ children }) => {
         <footer>
           {new Date().getFullYear()}, Created by Harrison Hayes
           {` `}
-          <a href="https://www.linkedin.com/in/harrisonhayes/" target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/harrisonhayes/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           {` `}
-          <a href="https://github.com/harrison97" target="_blank">GitHub</a>
+          <a href="https://github.com/harrison97" target="_blank" rel="noopener noreferrer">GitHub</a>
         </footer>
       </div>
     </>
