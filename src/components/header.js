@@ -2,6 +2,8 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import HeaderPageLink from './headerPageLink';
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -26,6 +28,10 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
+          <HeaderPageLink pageTitle="Home" pageLink="#" />
+          <HeaderPageLink pageTitle="About" pageLink="#" />
+          <HeaderPageLink pageTitle="Contact" pageLink="#" />
+          <HeaderPageLink pageTitle="Resume" pageLink="#" />
         </Link>
       </h1>
     </div>
