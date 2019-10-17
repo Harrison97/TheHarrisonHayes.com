@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import HeaderPageLink from './headerLinks';
+import { HeaderPageLink } from './headerLinks';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
-          <HeaderPageLink pageTitle="Home" pageLink="#" />
+          <HeaderPageLink pageTitle="Home" pageLink="/" />
           <HeaderPageLink pageTitle="About" pageLink="#" />
           <HeaderPageLink pageTitle="Contact" pageLink="#" />
           <HeaderPageLink pageTitle="Resume" pageLink="#" />

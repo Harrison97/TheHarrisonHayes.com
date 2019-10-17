@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const HeaderPageLink = ({ pageTitle, pageLink }) => (
+export const HeaderPageLink = ({ pageTitle, pageLink }) => (
   <div
     style={{
       margin: '0 auto',
@@ -34,7 +34,7 @@ HeaderPageLink.defaultProps = {
   pageLink: '',
 };
 
-const HeaderIconLink = ({ icon, link }) => <div>{(icon, link)}</div>;
+export const HeaderIconLink = ({ icon, link }) => <div>{(icon, link)}</div>;
 
 HeaderIconLink.propTypes = {
   icon: PropTypes.string,
@@ -45,5 +45,3 @@ HeaderIconLink.defaultProps = {
   icon: '',
   link: '',
 };
-
-export default { HeaderPageLink, HeaderIconLink };
