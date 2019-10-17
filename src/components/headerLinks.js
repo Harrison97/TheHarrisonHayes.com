@@ -34,4 +34,16 @@ HeaderPageLink.defaultProps = {
   pageLink: '',
 };
 
-export default HeaderPageLink;
+const HeaderIconLink = ({ icon, link }) => <div>{(icon, link)}</div>;
+
+HeaderIconLink.propTypes = {
+  icon: PropTypes.string,
+  link: PropTypes.string,
+};
+
+HeaderIconLink.defaultProps = {
+  icon: '',
+  link: '',
+};
+
+export default { HeaderPageLink, HeaderIconLink };
