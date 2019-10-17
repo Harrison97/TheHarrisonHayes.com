@@ -11,6 +11,8 @@
     "implicit-arrow-linebreak": "off",
     "comma-dangle": "off",
     "indent": "off",
-    "no-trailing-spaces": "off"
+    "no-trailing-spaces": "off",
+    "object-property-newline": "off",
+    "object-curly-newline": 0
   }
 }
