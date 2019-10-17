@@ -18,14 +18,17 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          sidebarQuote
         }
       }
     }
   `);
 
+  const { title, sidebarQuote } = data.site.siteMetadata;
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={title} sidebarQuote={sidebarQuote} />
       <div
         style={{
           margin: '0 auto',
@@ -35,22 +38,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          {new Date().getFullYear()}
-          <>, Created by Harrison Hayes</>
-          <> </>
-          <a
-            href="https://www.linkedin.com/in/harrisonhayes/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          <> </>
-          <a href="https://github.com/harrison97" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </footer>
       </div>
     </>
   );

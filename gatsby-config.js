@@ -4,6 +4,8 @@ module.exports = {
     description:
       'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
     author: 'Harrison Hayes',
+    sidebarQuote:
+      '"Confidence in your code is the single most important thing that you have to have as a software engineer" - Ronak Shah',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

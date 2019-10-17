@@ -4,12 +4,14 @@ import React from 'react';
 
 import { HeaderPageLink } from './headerLinks';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, sidebarQuote }) => (
   <header
     style={{
       background: 'silver',
       marginBottom: '1.45rem',
       position: 'fixed',
+      width: '18%',
+      height: '100%',
     }}
   >
     <div
@@ -28,22 +30,42 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
-          <HeaderPageLink pageTitle="Home" pageLink="/" />
-          <HeaderPageLink pageTitle="About" pageLink="#" />
-          <HeaderPageLink pageTitle="Contact" pageLink="#" />
-          <HeaderPageLink pageTitle="Resume" pageLink="#" />
         </Link>
       </h1>
+      <div style={{ margin: '7rem auto' }}>
+        <HeaderPageLink pageTitle="About" pageLink="/about" />
+        <HeaderPageLink pageTitle="Resume" pageLink="/resume" />
+        <HeaderPageLink pageTitle="Contact" pageLink="contact" />
+      </div>
+      <h3>{sidebarQuote}</h3>
+      <footer style={{ bottom: '1rem', position: 'absolute' }}>
+        {new Date().getFullYear()}
+        <>, Created by Harrison Hayes</>
+        <> </>
+        <a
+          href="https://www.linkedin.com/in/harrisonhayes/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <> </>
+        <a href="https://github.com/harrison97" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </footer>
     </div>
   </header>
 );
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  sidebarQuote: PropTypes.string,
 };
 
 Header.defaultProps = {
   siteTitle: '',
+  sidebarQuote: '',
 };
 
 export default Header;
