@@ -10,17 +10,17 @@ export const HeaderPageLink = ({ pageTitle, pageLink }) => (
       padding: 0,
     }}
   >
-    <h1 style={{ margin: 0, textAlign: 'right' }}>
+    <p style={{ margin: 0, textAlign: 'right' }}>
       <Link
         to={pageLink}
         style={{
           color: 'black',
-          //   textDecoration: 'none',
+          textDecoration: 'none',
         }}
       >
         {pageTitle}
       </Link>
-    </h1>
+    </p>
   </div>
 );
 

@@ -19,16 +19,21 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           sidebarQuote
+          sidebarQuoteAuthor
         }
       }
     }
   `);
 
-  const { title, sidebarQuote } = data.site.siteMetadata;
+  const { title, sidebarQuote, sidebarQuoteAuthor } = data.site.siteMetadata;
 
   return (
     <>
-      <Header siteTitle={title} sidebarQuote={sidebarQuote} />
+      <Header
+        siteTitle={title}
+        sidebarQuote={sidebarQuote}
+        sidebarQuoteAuthor={sidebarQuoteAuthor}
+      />
       <div
         style={{
           margin: '0 auto',
