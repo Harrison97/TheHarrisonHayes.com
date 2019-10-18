@@ -7,13 +7,14 @@ import { HeaderPageLink } from './headerLinks';
 const Header = ({ siteTitle, sidebarQuote, sidebarQuoteAuthor }) => (
   <header
     style={{
-      background: 'silver',
+      background: 'white',
       marginBottom: '1.45rem',
       position: 'fixed',
       width: '300px',
       height: '100%',
       padding: '20px',
       paddingTop: '40px',
+      borderRight: '1px solid silver',
     }}
   >
     <div
